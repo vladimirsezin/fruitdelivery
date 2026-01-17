@@ -1,0 +1,21 @@
+@import 'header.min.css';
+@import 'section.min.css';
+@import 'media.min.css';
+body {
+    font-family: "Montserrat Alternates", sans-serif;
+    max-width: 1440px;
+    overflow-x: hidden;
+}
+.hr {
+  border: none;
+  height: 1px;
+  width: 80%;
+  margin: 10px auto;
+  background: linear-gradient(
+    to right,
+    white 0%,
+    rgba(128, 128, 128, 0.5) 25%,
+    rgba(128, 128, 128, 0.5) 75%,
+    white 100%
+  );
+}
