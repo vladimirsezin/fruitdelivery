@@ -1,0 +1,224 @@
+.hero__section {
+  display: flex;
+  margin-top: 70px;
+  padding-left: 220px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero__description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hero__description-uptitle {
+  font-size: 22px;
+  font-weight: 400;
+  width: 400px;
+}
+
+.hero__description-title {
+  font-size: 54px;
+  color: #66a104;
+  line-height: 1.15;
+}
+
+.description-subtext {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.hero__img {
+  width: 820px;
+  height: 535px;
+  object-fit: cover;
+  object-position: -30px 0;
+}
+
+/* Убрал .hero__img-container - он не используется в вашем HTML */
+
+.healthy__section {
+  display: flex;
+  padding: 0 220px;
+  margin-top: 50px;
+}
+
+.healthy__img {
+  align-self: center;
+  width: 581px;
+  height: 468px;
+}
+
+.healthy__section-fruit--description {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+/* ОБЪЕДИНЕНО: два определения в одно */
+.healthy__description-title {
+  display: inline-flex;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.15;
+  align-items: baseline;
+  text-align: center; /* Добавлено из второго определения */
+  margin: 0 auto; /* Для центрирования */
+}
+
+.healthy__section-snack {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  gap: 10px;
+}
+
+.stats-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 800px;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s; /* Объединено */
+}
+
+.stat-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.stat-number {
+  font-size: 36px;
+  font-weight: 700;
+  color: #66a104;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  padding: 0 220px;
+  align-items: center; /* Центрируем всё содержимое */
+  text-align: center;
+  gap: 50px;
+}
+
+.gallery__description {
+  text-align: center; /* Убрал grid-свойства */
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3 равные колонки */
+  grid-template-rows: repeat(3, minmax(0, 1fr));    /* 3 строки */
+  gap: 1px;
+  max-width: min(900px, 95vw); /* Не больше 900px и 95% ширины экрана */
+  margin: 50px auto 0;
+  background: radial-gradient(
+    circle at center,
+    white 10%,
+    rgba(128, 128, 128, 0.1) 20%,
+    rgba(128, 128, 128, 0.3) 50%
+  );
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden; /* Обрезаем всё что выходит */
+}
+
+.gallery-grid img {
+  width: 100%; /* Занимает всю ячейку */
+  height: 100%; /* Занимает всю высоту ячейки */
+  aspect-ratio: 1 / 1; /* Гарантирует квадратную форму */
+  object-fit: contain; /* Вписывает изображение */
+  background: white;
+  transition: transform 0.3s;
+  display: block; /* Убирает лишние отступы */
+}
+
+.gallery-grid img:hover {
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  border-radius: 8px;
+  transform: scale(0.98);
+}
+
+.about {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 220px;
+}
+
+.about__title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 500;
+}
+
+.about_description {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 30px;
+  padding-bottom: 50px;
+  justify-content: center; /* Центрируем блок */
+}
+
+.about__text {
+  width: 700px;
+  font-size: 24px;
+}
+
+.about__image {
+  width: 362px;
+  height: 362px;
+  align-self: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 220px;
+  gap: 110px;
+  padding-bottom: 30px;
+}
+
+.footer__logo {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  gap: 20px;
+}
+
+.footer__text {
+  font-size: 20px;
+  text-align: left;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 10px;
+}
+
+.phone-link:hover {
+  color: #66a104;
+}
